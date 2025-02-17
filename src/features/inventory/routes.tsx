@@ -1,14 +1,23 @@
 import { RouteObject } from 'react-router-dom'
-import { StockDashboard } from './pages/StockDashboard'
 import { ProductsList } from './pages/ProductsList'
+import CreateProduct from './pages/CreateProduct'
+import { StockDashboard } from './pages/StockDashboard'
 
 export const inventoryRoutes: RouteObject[] = [
   {
-    path: 'dashboard',
-    element: <StockDashboard />
+    path: "/",
+    element: <ProductsList />
   },
   {
-    path: 'products',
+    path: "/products",
     element: <ProductsList />
+  },
+  {
+    path: "/products/new",
+    element: <CreateProduct />
+  },
+  {
+    path: "/dashboard",
+    element: <StockDashboard />
   }
 ] 
