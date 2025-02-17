@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Styles de base */
+
+
+/* Styles pour les cartes */
+.stat-card {
+  @apply bg-white rounded-xl p-6 hover:scale-[1.02] transition-all duration-200;
+}
+
+/* Styles pour les boutons */
+.btn-primary {
+  @apply px-4 py-2 bg-indigo-600 text-white rounded-xl hover:bg-indigo-700 transition-colors;
+}
+
+.btn-secondary {
+  @apply px-4 py-2 bg-gray-700 text-gray-300 rounded-xl hover:bg-gray-600 transition-colors;
+}
+
+/* Styles pour la recherche */
+.search-input {
+  @apply pl-10 pr-4 py-2 bg-gray-800 text-white rounded-lg border border-gray-700;
+}
+
+/* Animation flottante */
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
